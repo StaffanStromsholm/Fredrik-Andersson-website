@@ -40,18 +40,17 @@ html {
     background-image: url(../img/bakgrundsbild.jpeg);
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     padding: 0 20px;
 }
 
-nav {
+nav, button {
         z-index: 2;
-        align-content: left;
 }
 
 .bg-light {
@@ -88,7 +87,6 @@ nav {
     line-height: 1.2;
     /* color: rgb(110, 196, 152); */
     color: rgb(255, 255, 255);
-    margin-bottom: 30px;
     z-index: 2;
     padding: 20px 20px;
     background-color: transparent !important;
