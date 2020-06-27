@@ -47,9 +47,9 @@ nav {
     height: 100vh;
 }
 
-#showcase h1{
+#showcase h2{
     font-family: 'DM Mono', monospace;
-    font-size: 50px;
+    font-size: 30px;
     line-height: 1.2;
     /* color: rgb(110, 196, 152); */
     color: rgb(255, 255, 255);
