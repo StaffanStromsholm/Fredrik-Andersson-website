@@ -93,6 +93,8 @@ nav a {
 
 #profile_pic {
    margin: 0 auto;
+   max-width:100%;
+    height:auto;
 }
 
 #showcase h1{
