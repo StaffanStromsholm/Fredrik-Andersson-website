@@ -87,15 +87,12 @@ nav a {
     height: 100%;
 }
 
+#om_mig {
+    text-align: center;
+}
+
 #profile_pic {
-    position: absolute;
-    width: 200px;
-    display: flex;
-    right: 10vh;
-    top: 40vh;
-    box-shadow: black;
-    border: 3px solid rgb(184, 204, 130);
-    border-radius: 50%;
+   margin: 0 auto;
 }
 
 #showcase h1{
@@ -204,19 +201,35 @@ nav a {
 .carousel-control-prev-icon {
   filter: invert(1);
 }
+  
 
-
-#projects{
+#about_me_section {
     padding: 20px;
     background-color: white;
     color: black;
 }
-#section-b{
+
+#about_me_section h2 {
+    background-color: rgb(122, 76, 38);
+    opacity: 0.7;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: white;
+}
+
+#contact{
     padding: 20px;
     background-color: white;
     color: black;
     width: 100%;
 }
+
+#contact h2 {
+    background-color: rgb(122, 76, 38);
+    color: white;
+}
+
 #section-c{
     display: flex;
 }
