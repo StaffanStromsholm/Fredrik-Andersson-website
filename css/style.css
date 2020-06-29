@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 0;
 }
 
@@ -13,6 +13,10 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+nav {
+    position: absolute;
 }
 
 nav a {
@@ -30,7 +34,7 @@ nav a {
     z-index: 3;
     display: flex;
     top: 15px;
-    right:20vw;
+    right:25vw;
     color: black;
     text-decoration: underline;
     z-index: 4;
@@ -43,7 +47,7 @@ nav a {
     z-index: 3;
     display: flex;
     top: 15px;
-    right:40vw;
+    right:25vw;
     color: black;
     text-decoration: underline;
     margin-right: 3vw;
@@ -66,6 +70,15 @@ nav a {
     /* padding: 0 20px; */
 }
 
+#showcasefoto {
+    position: relative;
+    background-image: url(../img/bakgrundsbild2.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* padding: 0 20px; */
+}
+
     nav, button {
         z-index: 3;
 }
@@ -77,7 +90,19 @@ nav a {
 
 #overlay {
     background-color: rgb(122, 76, 38);
-    opacity: 0.5;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+}
+
+#overlayfoto {
+    background-color: rgb(122, 76, 38);
+    opacity: 0.8;
     position: absolute;
     top: 0;
     left: 0;
@@ -99,20 +124,20 @@ nav a {
 
 #showcase h1{
     font-family: 'Bubbler One', sans-serif;
-    font-weight: 400;
-    position: absolute;
+    font-weight: 700;
+    position: relative;
     font-size: 28px;
     line-height: 1.2;
     /* color: rgb(110, 196, 152); */
     color: rgb(255, 255, 255);
-    z-index: 2;
+    z-index: 1;
     padding: 20px 20px;
     background-color: transparent !important;
     display: flex;
     align-content: center;
     text-align: center;
     right: 20%px;
-    margin-top: 35vh;
+    margin-top: 30vh;
 }
 
 @media (min-width: 500px) {
@@ -171,31 +196,38 @@ nav a {
 }
 
 #slideshow {
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
-#slideshow, img {
-    height: 25vh;
+#slideshow, img { 
+    width: auto; 
+    height: 30vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 20px auto;
 }
 
-@media (min-width: 600px){
+@media (min-width: 400px){
     #slideshow, img {
         height: 30vh;
     }
 }
 
-@media (min-width: 700px){
+@media (min-width: 500px){
     #slideshow, img {
         height: 40vh;
     }
 }
 
+@media (min-width: 700px){
+    #slideshow, img {
+        height: 50vh;
+    }
+}
+
 @media (min-width: 1000px){
     #slideshow, img {
-        height: 80vh;
+        height: 90vh;
     }
 }
 
@@ -213,8 +245,7 @@ nav a {
 
 #about_me_section h2 {
     background-color: rgb(122, 76, 38);
-    opacity: 0.7;
-    margin: 0;
+    margin: 15 0 0 0;
     padding: 0;
     width: 100%;
     color: white;
@@ -238,3 +269,23 @@ nav a {
 #section-c div{
     padding: 20px;
 }
+
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(122, 76, 38);
+    color: white;
+    text-align: center;
+  }
+
+  .footer p {
+      font-size: 0.8rem;
+      margin: 0;
+    
+  }
+
+  .footer a {
+      color: rgb(111, 141, 206);
+  }
