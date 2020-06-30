@@ -29,13 +29,20 @@ nav a {
     font-size: 2rem;
 }
 
+.navbar-toggler-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
 .sve {
     font-size: 1.5rem;
     position: absolute;
     z-index: 3;
     display: flex;
     top: 15px;
-    right:25vw;
+    left: 20px;
     color: black;
     text-decoration: underline;
     z-index: 4;
@@ -48,7 +55,7 @@ nav a {
     z-index: 3;
     display: flex;
     top: 15px;
-    right:25vw;
+    left: 20px;
     color: black;
     text-decoration: underline;
     margin-right: 3vw;
@@ -87,6 +94,8 @@ nav a {
 .bg-light {
     background-color: transparent !important;
     font-family: 'DM Mono', monospace;
+    position: absolute;
+    right: 30px;
 }
 
 #overlay {
@@ -148,7 +157,7 @@ nav a {
     text-align: center;
     justify-content: center;
     right: 20%px;
-    margin-top: 30vh;
+    margin-top: 40vh;
 }
 
 @media (min-width: 500px) {
