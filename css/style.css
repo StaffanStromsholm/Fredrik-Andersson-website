@@ -5,7 +5,8 @@
 
 body {
     margin: 0;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    /* font-family: 'DM Mono', monospace; */
+    font-family: 'Roboto', sans-serif;
     font-size: 17px;
     line-height: 1.6s;
     background-color: rgb(255, 255, 255);
@@ -89,8 +90,8 @@ nav a {
 }
 
 #overlay {
-    background-color: rgb(122, 76, 38);
-    opacity: 0.8;
+    background-color: rgb(46, 46, 46);
+    opacity: 0.5;
     position: absolute;
     top: 0;
     left: 0;
@@ -130,12 +131,14 @@ nav a {
 
 #showcase h1{
     font-family: 'Bubbler One', sans-serif;
+    /* font-family: 'DM Mono', monospace; */
     font-weight: 700;
     position: relative;
     font-size: 28px;
     line-height: 1.2;
     /* color: rgb(110, 196, 152); */
     color: rgb(255, 255, 255);
+    text-shadow: black;
     z-index: 1;
     padding: 20px 20px;
     background-color: transparent !important;
@@ -157,6 +160,15 @@ nav a {
         padding: 20px 20px;
         background-color: transparent !important; */
     }
+}
+
+.btn {
+    background-color: rgb(172, 48, 48);
+    border: none;
+}
+
+.btn a {
+    color: white;
 }
 
 #showcase p{
@@ -250,7 +262,8 @@ nav a {
 }
 
 #about_me_section h2 {
-    color: rgb(122, 76, 38);
+    font-family: 'Bubbler One', sans-serif;
+    color: rgb(172, 48, 48);
     margin: 15 0 0 0;
     /* background-color: rgba(122, 76, 38, 0.253); */
     padding: 0;
@@ -267,7 +280,8 @@ nav a {
 }
 
 #contact h2 {
-    color: rgb(122, 76, 38);
+    font-family: 'Bubbler One', sans-serif;
+    color: rgb(172, 48, 48);
     /* background-color: rgba(122, 76, 38, 0.253); */
    
 }
@@ -284,12 +298,20 @@ nav a {
     padding: 20px;
 }
 
+.social_media {
+    text-align: center;
+}
+
+.social_media a {
+    font-size: 2.5rem;
+}
+
 .footer {
     position: static;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(122, 76, 38);
+    background-color: rgb(172, 48, 48);
     color: white;
     text-align: center;
   }
