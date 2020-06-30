@@ -122,6 +122,12 @@ nav a {
     height:auto;
 }
 
+.project_pic {
+    margin: 0 auto;
+   max-width:100%;
+    height:auto;
+}
+
 #showcase h1{
     font-family: 'Bubbler One', sans-serif;
     font-weight: 700;
@@ -244,11 +250,12 @@ nav a {
 }
 
 #about_me_section h2 {
-    background-color: rgb(122, 76, 38);
+    color: rgb(122, 76, 38);
     margin: 15 0 0 0;
+    /* background-color: rgba(122, 76, 38, 0.253); */
     padding: 0;
     width: 100%;
-    color: white;
+   
 }
 
 #contact{
@@ -256,11 +263,18 @@ nav a {
     background-color: white;
     color: black;
     width: 100%;
+    text-align: center;
 }
 
 #contact h2 {
-    background-color: rgb(122, 76, 38);
-    color: white;
+    color: rgb(122, 76, 38);
+    /* background-color: rgba(122, 76, 38, 0.253); */
+   
+}
+
+#about_me p {
+    display: flex;
+    text-align: justify;
 }
 
 #section-c{
