@@ -90,8 +90,8 @@ nav a {
 }
 
 #overlay {
-    background-color: rgb(46, 46, 46);
-    opacity: 0.5;
+    background-color: #ffffff;
+    opacity: 0.4;
     position: absolute;
     top: 0;
     left: 0;
@@ -102,7 +102,7 @@ nav a {
 }
 
 #overlayfoto {
-    background-color: rgb(122, 76, 38);
+    background-color: #f8b24f;
     opacity: 0.8;
     position: absolute;
     top: 0;
@@ -134,17 +134,19 @@ nav a {
     /* font-family: 'DM Mono', monospace; */
     font-weight: 700;
     position: relative;
+    width: 100%;
     font-size: 28px;
     line-height: 1.2;
     /* color: rgb(110, 196, 152); */
-    color: rgb(255, 255, 255);
+    color: white;
     text-shadow: black;
     z-index: 1;
     padding: 20px 20px;
-    background-color: transparent !important;
+    background-color: rgb(125, 161, 144);
     display: flex;
     align-content: center;
     text-align: center;
+    justify-content: center;
     right: 20%px;
     margin-top: 30vh;
 }
@@ -263,7 +265,7 @@ nav a {
 
 #about_me_section h2 {
     font-family: 'Bubbler One', sans-serif;
-    color: rgb(172, 48, 48);
+    color: rgb(125, 161, 144);
     margin: 15 0 0 0;
     /* background-color: rgba(122, 76, 38, 0.253); */
     padding: 0;
@@ -281,7 +283,7 @@ nav a {
 
 #contact h2 {
     font-family: 'Bubbler One', sans-serif;
-    color: rgb(172, 48, 48);
+    color: rgb(125, 161, 144);
     /* background-color: rgba(122, 76, 38, 0.253); */
    
 }
@@ -311,7 +313,7 @@ nav a {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(172, 48, 48);
+    background-color:rgb(125, 161, 144);
     color: white;
     text-align: center;
   }
@@ -323,5 +325,5 @@ nav a {
   }
 
   .footer a {
-      color: rgb(111, 141, 206);
+      color: rgb(23, 78, 196);
   }
