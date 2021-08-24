@@ -9,7 +9,10 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     line-height: 1.6s;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 html {
@@ -49,13 +52,13 @@ nav a {
 }
 
 .fi {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     position: absolute;
     z-index: 3;
     display: flex;
     top: 15px;
-    left: 20px;
+    right: 20px;
     color: black;
     text-decoration: underline;
     margin-right: 3vw;
@@ -71,55 +74,35 @@ nav a {
 
 #showcase {
     position: relative;
-    background-image: url(../img/bakgrundsbild2.JPG);
+    background-image: url(../img/bakgrundsbild3.JPG);
     background-size: cover;
     background-position: center;
     height: 100vh;
     /* padding: 0 20px; */
 }
 
-#showcasefoto {
-    position: relative;
-    background-image: url(../img/bakgrundsbild2.JPG);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    /* padding: 0 20px; */
+#hero-profilePic {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    position: absolute;
+    right: 100px;
+    bottom: -100px;
+    z-index: -1;
 }
 
-    nav, button {
-        z-index: 3;
-}
-
+/* this is the navbar */
 .bg-light {
-    background-color: transparent !important;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Roboto', sans-serif;
     position: absolute;
-    right: 30px;
+    width: 100vw;
+    background-color: #9acecad8 !important;
+    z-index: 1;
 }
 
-#overlay {
-    background-color: #ffe1e1;
-    opacity: 0.4;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    height: 100%;
-}
-
-#overlayfoto {
-    background-color: #f8b24f;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    height: 100%;
+.bg-light li {
+    margin-right: 20px;
 }
 
 #om_mig {
@@ -138,38 +121,97 @@ nav a {
     height:auto;
 }
 
-#showcase h1{
-    font-family: 'Bubbler One', sans-serif;
-    /* font-family: 'DM Mono', monospace; */
-    font-weight: 700;
-    position: relative;
-    width: 100%;
-    font-size: 28px;
-    line-height: 1.2;
-    /* color: rgb(110, 196, 152); */
-    color: white;
-    text-shadow: black;
-    z-index: 1;
-    padding: 20px 20px;
-    background-color: rgb(125, 161, 144);
+.social_media {
+    position: absolute;
+    right: 120px;
+    bottom: -60px;
+    width: 60px;
+    height: 60px;
     display: flex;
-    align-content: center;
-    text-align: center;
     justify-content: center;
-    right: 20%px;
-    margin-top: 40vh;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
 }
 
-@media (min-width: 500px) {
+.social_media a {
+    font-size: 2.5rem;
+    text-align: center;
+    display: block;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.social_media a:hover {
+    text-decoration: none;
+}
+
+.flexcontent{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+    height: 330px;
+    letter-spacing: 10px;
+    font-size: 5rem;
+    line-height: 1.2;
+    z-index: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+#showcase h1 {
+    z-index: 1;
+}
+
+#andersson {
+    display: block;
+    font-family: 'Kristi', cursive;
+    letter-spacing: 0;
+    font-size: 7rem;
+}
+
+#h1overlay {
+    width: 100%;
+    height: 300px;
+    background: url(../img/brush-stroke-banner-7.png);
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding: 8px 0;
+    filter: invert(45%) sepia(74%) saturate(2586%) hue-rotate(350deg) brightness(89%) contrast(91%) opacity(0.9);
+    z-index: -1;
+    position: absolute;
+}
+
+@media (max-width: 700px) {
     #showcase h1{
-        font-size: 50px;
-        /* line-height: 1.2;
-        /* color: rgb(110, 196, 152); */
-        /* color: rgb(255, 255, 255);
-        margin-bottom: 20px;
-        z-index: 2;
-        padding: 20px 20px;
-        background-color: transparent !important; */
+        font-size: 1.1rem;
+    }
+    #showcase #andersson {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #hero-profilePic {
+        width: 150px;
+        height: 150px;
+        right: 20px;
+        bottom: -50px;
+    }
+
+    .social_media {
+        font-size: .7rem;
+        right: 30px;
     }
 }
 
@@ -224,26 +266,43 @@ nav a {
     width: 100%;
 }
 
+.slideshow-about-me-wrapper {
+    display: flex;
+}
+
 #slideshow {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 #slideshow, img { 
-    width: auto; 
-    height: 30vh;
+    width: 500px; 
+    height: 300px;
+    object-fit: cover;
     display: flex;
     justify-content: center;
     margin: 20px auto;
+    border-radius: 8px;
+    /* background: black !important; */
+
+}
+
+@media (min-width: 300px){
+    #slideshow, img {
+        width: 300px;
+        height: 30vh;
+    }
 }
 
 @media (min-width: 400px){
     #slideshow, img {
+        width: 400px;
         height: 30vh;
     }
 }
 
 @media (min-width: 500px){
     #slideshow, img {
+        width: 500px;
         height: 40vh;
     }
 }
@@ -256,7 +315,7 @@ nav a {
 
 @media (min-width: 1000px){
     #slideshow, img {
-        height: 90vh;
+        /* height: 90vh; */
     }
 }
 
@@ -264,37 +323,61 @@ nav a {
 .carousel-control-prev-icon {
   filter: invert(1);
 }
-  
-
-#about_me_section {
-    padding: 20px;
-    background-color: white;
-    color: black;
-}
 
 #about_me_section h2 {
     font-family: 'Bubbler One', sans-serif;
-    color: rgb(125, 161, 144);
     margin: 15 0 0 0;
-    /* background-color: rgba(122, 76, 38, 0.253); */
     padding: 0;
     width: 100%;
-   
+    max-width: 600px;
 }
 
-#contact{
-    padding: 20px;
-    background-color: white;
-    color: black;
-    width: 100%;
-    text-align: center;
+#contact, section#about_me_section{
+    padding: 50px;
+    /* background-color: #9acecad8; */
+    background-color: #da5a1e;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 8px;
+    font-size: .9rem;
+    margin-top: 40px;
+    /* margin-bottom: 40px; */
 }
+
+.contact-wrapper, .about_me_wrapper {
+    padding: 0 70px;
+}
+
+@media (max-width: 700px) {
+    #contact, section#about_me_section{
+        padding: 0;
+        
+    }
+    .contact-wrapper, .about_me_wrapper {
+        display: block;
+        padding: 40px 10px;
+    }
+    .contact-a, .contact-b, .about_me_a, .about_me_b {
+        width: 100%;
+    }
+    .contact-wrapper, .about_me_wrapper {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* .contact-a, .contact-b, .about_me_a, .about_me_b {
+    width: 45%;
+} */
 
 #contact h2 {
     font-family: 'Bubbler One', sans-serif;
-    color: rgb(125, 161, 144);
-    /* background-color: rgba(122, 76, 38, 0.253); */
-   
+}
+
+#contact a {
+    color: white;
+    text-decoration: underline;
 }
 
 #about_me p {
@@ -302,37 +385,30 @@ nav a {
     text-align: justify;
 }
 
-#section-c{
-    display: flex;
-}
-#section-c div{
-    padding: 20px;
-}
-
-.social_media {
-    text-align: center;
-}
-
-.social_media a {
-    font-size: 2.5rem;
-}
-
 .footer {
     position: static;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:rgb(125, 161, 144);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9acecad8 !important;
     color: white;
     text-align: center;
+    margin-top: 30px;
   }
 
   .footer p {
-      font-size: 0.8rem;
       margin: 0;
-    
+      font-size: .9rem;
   }
 
   .footer a {
-      color: rgb(23, 78, 196);
+      color: #da5a1e;
+  }
+
+  .obs {
+      text-decoration: underline;
   }
