@@ -1,0 +1,32 @@
+[debug] [2021-08-25T10:11:25.103Z] ----------------------------------------------------------------------
+[debug] [2021-08-25T10:11:25.104Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2021-08-25T10:11:25.105Z] CLI Version:   9.16.5
+[debug] [2021-08-25T10:11:25.105Z] Platform:      darwin
+[debug] [2021-08-25T10:11:25.105Z] Node Version:  v15.6.0
+[debug] [2021-08-25T10:11:25.108Z] Time:          Wed Aug 25 2021 13:11:25 GMT+0300 (Eastern European Summer Time)
+[debug] [2021-08-25T10:11:25.108Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-25T10:11:25.112Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-08-25T10:11:25.133Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-25T10:11:25.133Z] > authorizing via signed-in user (staffan.stromsholm@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/staffanstromsholm/Documents/GitHub/Fredrik-Andersson-website
+
+[debug] [2021-08-25T10:11:25.601Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-08-25T10:11:25.602Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
